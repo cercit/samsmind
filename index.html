@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SamsMind Public Notes</title>
+<meta name="description" content="A public slice of Sameer's second brain: notes on product management, credit appraisal, coins and tools, linked by meaning.">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<style>
+  :root {
+    --bg: #f7f6f2; --panel: #ffffff; --text: #1f2328; --muted: #5b6470; --line: #e3e1da; --edge: #b9b6ad;
+    --Projects: #3b6fb6; --Areas: #2f8a5a; --Resources: #b0702e; --Archives: #7a7f87;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15181c; --panel: #1d2126; --text: #e8eaed; --muted: #a3abb5; --line: #2e343b; --edge: #4a5058;
+      --Projects: #7fa9e6; --Areas: #6fcf97; --Resources: #e0a468; --Archives: #aab0b8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15181c; --panel: #1d2126; --text: #e8eaed; --muted: #a3abb5; --line: #2e343b; --edge: #4a5058;
+    --Projects: #7fa9e6; --Areas: #6fcf97; --Resources: #e0a468; --Archives: #aab0b8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+               font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #app { display: grid; grid-template-rows: auto 1fr; height: 100%; }
+  header { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 10px 16px;
+           border-bottom: 1px solid var(--line); background: var(--panel); }
+  header h1 { font-size: 1.05rem; margin: 0; }
+  header p { margin: 0; color: var(--muted); font-size: .85rem; flex: 1 1 260px; }
+  input { font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line);
+          border-radius: 8px; padding: 6px 10px; min-width: 0; flex: 0 1 240px; }
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
+  .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+                         background: var(--c); margin-right: 5px; vertical-align: -1px; }
+  main { position: relative; min-height: 0; }
+  #graph { position: absolute; inset: 0; }
+  #results { position: absolute; top: 10px; left: 16px; width: min(380px, calc(100% - 32px)); max-height: 45%;
+             overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; display: none; z-index: 5; }
+  #results div { padding: 8px 12px; border-bottom: 1px solid var(--line); cursor: pointer; }
+  #results small { color: var(--muted); display: block; }
+  aside { position: absolute; top: 0; right: 0; bottom: 0; width: min(460px, 100%); background: var(--panel);
+          border-left: 1px solid var(--line); overflow: auto; padding: 16px 20px 40px; display: none; z-index: 6; }
+  aside h2 { margin: 0 0 4px; font-size: 1.2rem; }
+  aside .meta { color: var(--muted); font-size: .85rem; margin-bottom: 10px; }
+  aside .summary { background: var(--bg); border-radius: 8px; padding: 8px 10px; margin-bottom: 12px; }
+  aside .body { font-size: .92rem; overflow-wrap: anywhere; }
+  aside .body table { border-collapse: collapse; display: block; overflow-x: auto; }
+  aside .body td, aside .body th { border: 1px solid var(--line); padding: 3px 6px; }
+  aside .body pre { white-space: pre-wrap; background: var(--bg); padding: 8px; border-radius: 6px; }
+  aside a { color: var(--Projects); }
+  aside button { float: right; font: inherit; background: none; border: 1px solid var(--line); color: var(--text);
+                 border-radius: 8px; padding: 2px 10px; cursor: pointer; }
+  .tip { max-width: 300px; font: 13px/1.45 system-ui, sans-serif; }
+  .tip b { display: block; margin-bottom: 3px; }
+  div.vis-tooltip { background: #fff !important; color: #1f2328 !important; border: 1px solid #ddd !important;
+                    border-radius: 8px !important; padding: 8px 10px !important; white-space: normal !important; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>SamsMind</h1>
+    <p>A public slice of my second brain. Each dot is a note; lines join notes about related things. Hover to preview, click to read.</p>
+    <input id="q" type="search" placeholder="Search these notes">
+    <div class="legend">
+      <span style="--c:var(--Projects)">Projects</span><span style="--c:var(--Areas)">Areas</span>
+      <span style="--c:var(--Resources)">Resources</span><span style="--c:var(--Archives)">Archives</span>
+    </div>
+  </header>
+  <main>
+    <div id="graph"></div>
+    <div id="results"></div>
+    <aside id="panel"></aside>
+  </main>
+</div>
+<script>
+const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let notes = {}, network;
+
+function safeHtml(markdown) {
+  // Note text is escaped first, so no raw HTML gets through; then only http(s)/mailto links survive.
+  const box = document.createElement("div");
+  box.innerHTML = marked.parse(esc(markdown));
+  box.querySelectorAll("a").forEach(a => {
+    const href = a.getAttribute("href") || "";
+    if (/^(https?:|mailto:|#)/i.test(href)) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+    else a.removeAttribute("href");
+  });
+  box.querySelectorAll("img").forEach(img => { if (!/^https?:/i.test(img.getAttribute("src") || "")) img.remove(); });
+  return box.innerHTML;
+}
+
+
+function tooltip(n) {
+  const el = document.createElement("div");
+  el.className = "tip";
+  el.innerHTML = `<b>${esc(n.label)}</b>${esc(n.area)} · ${esc(n.group)}<div>${esc(n.summary || n.preview)}</div>`;
+  return el;
+}
+
+async function load() {
+  const [graph, list] = await Promise.all([fetch("graph.json").then(r => r.json()), fetch("notes.json").then(r => r.json())]);
+  list.forEach(n => notes[n.id] = n);
+  const data = {
+    nodes: new vis.DataSet(graph.nodes.map(n => {
+      const color = css("--" + n.group) || css("--Resources");
+      return { id: n.id, label: n.label.length > 34 ? n.label.slice(0, 32) + "…" : n.label, title: tooltip(n),
+               value: 1 + n.degree, shape: "dot", color: { background: color, border: color },
+               font: { color: css("--text"), size: 12 } };
+    })),
+    edges: new vis.DataSet(graph.edges.map((e, i) => ({ id: i, from: e.source, to: e.target, color: { color: css("--edge") } }))),
+  };
+  network = new vis.Network(document.getElementById("graph"), data, {
+    nodes: { scaling: { min: 8, max: 30 } }, edges: { smooth: false },
+    interaction: { hover: true, tooltipDelay: 120 },
+    physics: { barnesHut: { gravitationalConstant: -8000, springLength: 150 }, stabilization: { iterations: 200 } },
+  });
+  network.once("stabilizationIterationsDone", () => network.fit({ animation: { duration: 500 } }));
+  network.on("click", p => p.nodes.length ? openNote(p.nodes[0]) : closePanel());
+}
+
+function openNote(id) {
+  const n = notes[id];
+  if (!n) return;
+  const panel = document.getElementById("panel");
+  panel.innerHTML = `<button onclick="closePanel()">Close</button><h2>${esc(n.title)}</h2>
+    <div class="meta">${esc(n.area)}${n.tags.length ? " · " + n.tags.map(esc).join(", ") : ""}</div>
+    ${n.summary ? `<div class="summary">${esc(n.summary)}</div>` : ""}
+    ${n.link ? `<p><a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.link)}</a></p>` : ""}
+    <div class="body">${safeHtml(n.body)}</div>`;
+  panel.style.display = "block";
+  panel.scrollTop = 0;
+  network.selectNodes([id]);
+}
+function closePanel() { document.getElementById("panel").style.display = "none"; }
+
+document.getElementById("q").addEventListener("input", e => {
+  const box = document.getElementById("results");
+  const words = e.target.value.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) { box.style.display = "none"; return; }
+  const hits = Object.values(notes)
+    .map(n => ({ n, text: (n.title + " " + n.summary + " " + n.tags.join(" ") + " " + n.body).toLowerCase() }))
+    .filter(h => words.every(w => h.text.includes(w)))
+    .slice(0, 15);
+  box.innerHTML = hits.length
+    ? hits.map(h => `<div data-id="${esc(h.n.id)}">${esc(h.n.title)}<small>${esc(h.n.area)} · ${esc(h.n.summary)}</small></div>`).join("")
+    : `<div>No notes match.</div>`;
+  box.style.display = "block";
+  box.querySelectorAll("[data-id]").forEach(d => d.onclick = () => { box.style.display = "none"; openNote(d.dataset.id); });
+});
+load();
+</script>
+</body>
+</html>

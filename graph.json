@@ -1,0 +1,850 @@
+{
+ "nodes": [
+  {
+   "id": "015ce04b",
+   "label": "CIBIL check process for banks and NBFCs",
+   "group": "Resources",
+   "area": "articles",
+   "tags": [
+    "cibil-check",
+    "loan-underwriting",
+    "foir-calculation"
+   ],
+   "summary": "Banks and NBFCs follow a step‑by‑step CIBIL check process that includes data collection, bureau pull, report analysis, and final decision.",
+   "preview": "Banks & NBFCs — CIBIL Check Process A complete step by step process followed before approving any loan or credit card application. Process objectives: Understand the applicant's purpose, repayment abi...",
+   "degree": 1
+  },
+  {
+   "id": "031fe7f2",
+   "label": "Bias teardown: ten interview questions for Zepto",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "interview-questions",
+    "research-methodology",
+    "product-management"
+   ],
+   "summary": "Bias teardown lists ten interview questions for Zepto that expose common biases and shows how to rewrite them.",
+   "preview": "Bias Teardown: Ten Interview Questions for Zepto Ten questions a PM might realistically draft to research why users churn or stay loyal on Zepto. Each one carries at least one of the six named biases,...",
+   "degree": 0
+  },
+  {
+   "id": "08e16b2e",
+   "label": "Gemba walk insights for lending",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "gemba",
+    "plant-visit",
+    "approval-queue",
+    "visual-management",
+    "standard-work"
+   ],
+   "summary": "Gemba walk teaches how shop‑floor observations like queues and visual maps reveal hidden waste in lending approval processes.",
+   "preview": "Gemba means \"the actual place\". No report, dashboard or meeting room tells me what a process really does. I have to stand in front of it. Why a lender should walk round a factory A manufacturing plant...",
+   "degree": 0
+  },
+  {
+   "id": "11464886",
+   "label": "Illustrative financial study of the Vahan data ecosystem and paid API",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "vehicle-registration",
+    "finance",
+    "paid-api",
+    "api-revenue"
+   ],
+   "summary": "Illustrative financial study estimates the Vahan data ecosystem's annual running cost at ~₹150 cr and a tiered API's potential revenue.",
+   "preview": "Illustrative, order of magnitude only. These are reasoned estimates on stated assumptions, not official budgets or forecasts. The only hard facts are the cited precedent (the 2019 policy earned ₹111.4...",
+   "degree": 2
+  },
+  {
+   "id": "17581f36",
+   "label": "User interview knowledge note",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "user-interviews",
+    "qualitative-research",
+    "empathy-mapping",
+    "emotional-journey"
+   ],
+   "summary": "Explains how to conduct effective user interviews to uncover emotions, frustrations, and actionable opportunities.",
+   "preview": "User Interview Knowledge Note Overview The goal of a 1:1 user interview is to: 1. Surface the user’s emotions and frustrations at each step. 2. Map every touchpoint with the product in sequence. 3. Ge...",
+   "degree": 0
+  },
+  {
+   "id": "1e6dac98",
+   "label": "My coin collection site",
+   "group": "Areas",
+   "area": "coins",
+   "tags": [
+    "coin-collection",
+    "numista",
+    "interactive-map"
+   ],
+   "summary": "My coin collection site displays my Numista collection on an interactive world map searchable by country, issuer, and coin.",
+   "preview": "My coin collection site Public exhibition of my Numista collection https://cercit.github.io/coins/ A personal numismatic collection, explorable on an interactive world map and by country, issuer and c...",
+   "degree": 0
+  },
+  {
+   "id": "23e49a78",
+   "label": "Known issues and caveats",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "vehicle-registration",
+    "documentation",
+    "known-issues",
+    "ajax-values"
+   ],
+   "summary": "Known issues include dead placeholder links, AJAX‑populated values, spelling inconsistencies, duplicate entries, and data‑coverage caveats in the Vahan portal.",
+   "preview": "These are quirks captured on 6 August 2026 . They help you avoid misreading the portal — and they're the things most likely to change, so treat this page as living. Dead / placeholder links Footer TER...",
+   "degree": 0
+  },
+  {
+   "id": "2579cb7b",
+   "label": "Research methods for product managers",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "product-management",
+    "user-research",
+    "primary-research",
+    "secondary-research",
+    "survey-design"
+   ],
+   "summary": "Research methods for product managers covers primary vs secondary research, sequencing, bias, question design, and frameworks for PMs.",
+   "preview": "Research Methods for Product Managers Core purpose Research exists to kill assumptions before spending engineering time. Every method is a tool to discover you were wrong. Seven research types a PM pe...",
+   "degree": 0
+  },
+  {
+   "id": "2c2941a6",
+   "label": "Personas empathy maps and user journeys",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "personas",
+    "empathy-map",
+    "user-journey",
+    "jobs-to-be-done"
+   ],
+   "summary": "Personas empathy maps and user journeys teach how to synthesize user research into actionable insights for product decisions.",
+   "preview": "Session 05 — Personas, Empathy Maps & User Journeys I learned that user empathy in product management is not about being nice; it is about discovering what users will pay for. If I cannot connect empa...",
+   "degree": 0
+  },
+  {
+   "id": "2d7fba07",
+   "label": "Vahan Data API plan part 1",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan-data-api",
+    "customer-segments",
+    "financial-projections",
+    "api-endpoints",
+    "product-management"
+   ],
+   "summary": "Vahan Data API plan outlines government and private approaches to sell aggregated vehicle registration data.",
+   "preview": "Scope: An end to end plan (requirements → design → build → deploy) plus a full financial plan for an aggregate Vahan vehicle registration Data API , from two angles: (A) the Government operating it (M...",
+   "degree": 5
+  },
+  {
+   "id": "31c8e136",
+   "label": "Access control and segregation of duties",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "access-control",
+    "segregation-of-duties",
+    "role-policy",
+    "rls-policies",
+    "policy-manager",
+    "credit-head"
+   ],
+   "summary": "Access control and segregation of duties outlines current flaws, a six‑role model, permission matrix, enforcement steps, conflicting duties, and review processes.",
+   "preview": "Access control and segregation of duties Status: draft for review Created: 16 Sep 2026 Related: [[00 Policy Framework Overview]] · [[01 Role Policy Manager]] · [[07 Policy Gap Register]] Current state...",
+   "degree": 0
+  },
+  {
+   "id": "3be1d1ec",
+   "label": "Technical changes moving from Vahan4Dashboard to Vahan Public Report",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "technical-changes",
+    "vahan-public-report",
+    "dashboard",
+    "data-interaction"
+   ],
+   "summary": "The move from Vahan4Dashboard to the new Vahan Public Report/Dashboard introduces CAPTCHA‑gated AJAX filters, richer granular options, and a one‑year‑per‑query limit, making some analyses easier and automation harder.",
+   "preview": "The move from the old Vahan4Dashboard to the new Vahan Public Report / Dashboard is not just a new address — the way you interact with the data changed. This page summarises the technical shape of the...",
+   "degree": 2
+  },
+  {
+   "id": "42d241f1",
+   "label": "Vahan4Dashboard discontinuation and new public dashboard",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "vehicle-registration",
+    "documentation",
+    "dashboard-discontinuation",
+    "public-dashboard"
+   ],
+   "summary": "Vahan4Dashboard will be discontinued on 15 August 2026 and replaced by the new Public Dashboard on analytics.parivahan.gov.in.",
+   "preview": "The official notice MoRTH has posted this on the old Vahan4Dashboard: 📢 IMPORTANT NOTICE: The new Public Dashboard is now available. Vahan4Dashboard will be discontinued after 15 August 2026. Please u...",
+   "degree": 2
+  },
+  {
+   "id": "4552e5e0",
+   "label": "Cercit core rule: AI assists appraisal, policy decides, humans handle exceptions",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "cercit-core-rule",
+    "ai-assists",
+    "policy-decides",
+    "human-exceptions"
+   ],
+   "summary": "Cercit's core rule states that AI assists and automates appraisal, policy rules decide, and humans handle exceptions and high‑risk cases.",
+   "preview": "cercit core rule: AI assists and automates the appraisal, policy rules decide, humans handle exceptions and high risk cases.",
+   "degree": 0
+  },
+  {
+   "id": "4a5dcf74",
+   "label": "Six sigma core concepts",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "six-sigma",
+    "lean",
+    "quality",
+    "process-stability",
+    "cause-validation",
+    "wastes"
+   ],
+   "summary": "Six sigma core concepts cover quality, Y = f(x), process stability, cause validation, wastes, and RTY.",
+   "preview": "Quality The ISO 9000 definition I work from: quality is the degree to which a set of inherent characteristics of an object fulfils requirements. Stated and unstated needs Type Rough share What it mean...",
+   "degree": 0
+  },
+  {
+   "id": "4c24603e",
+   "label": "Usability testing and concept validation",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "product-management",
+    "usability-testing",
+    "concept-validation"
+   ],
+   "summary": "Usability testing and concept validation cover hypothesis creation, five‑screen workflow, moderation best practices, metrics, and iterative testing across product lifecycle.",
+   "preview": "Usability Testing & Concept Validation Hypothesis A hypothesis is the PM’s one‑line statement of what a user should be able to do with the product before it exists. It describes the general transactio...",
+   "degree": 0
+  },
+  {
+   "id": "50a0227b",
+   "label": "Why users abandon full carts on Blinkit",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "cart-abandonment",
+    "blinkit",
+    "user-research",
+    "inventory-reliability",
+    "eta-changes"
+   ],
+   "summary": "Blinkit researchers plan to investigate why users abandon carts after adding four or more items.",
+   "preview": "One Page Research Plan: Blinkit â€” Why Do Users Abandon Full Carts? Business question Blinkit's funnel data likely shows users adding 4+ items to the cart and then leaving without placing the order. ...",
+   "degree": 0
+  },
+  {
+   "id": "530c66aa",
+   "label": "KYC norms in India",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "kyc-india",
+    "rbi-guidelines",
+    "aadhaar-ekyc",
+    "video-kyc",
+    "data-retention",
+    "risk-assessment"
+   ],
+   "summary": "KYC in India requires identity verification via OVDs, PAN, and consent-based Aadhaar, with face-to-face or remote onboarding and five-year data retention.",
+   "preview": "Executive Summary KYC (Know Your Customer) norms in India are driven by multiple laws and regulators (RBI, UIDAI, PMLA, DPDP, etc.) to prevent fraud, money laundering and ensure customer due diligence...",
+   "degree": 1
+  },
+  {
+   "id": "5a712926",
+   "label": "Cercit phase 1 KYC policy",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "kyc-policy",
+    "cercit",
+    "phase-1",
+    "risk-rating",
+    "data-handling"
+   ],
+   "summary": "Cercit's Phase 1 KYC policy outlines scope, acceptance, identification, onboarding methods, risk rating, and data handling gaps.",
+   "preview": "KYC policy — cercit Phase 1 Status: draft for review Created: 16 Sep 2026 Source research: Downloads/KYC Policy.md (Sameer, Sep 2026) Related: [[00 Policy Framework Overview]] · [[02 Access Control an...",
+   "degree": 1
+  },
+  {
+   "id": "681d8fe8",
+   "label": "Credit policy for cercit Phase 1",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "credit-policy",
+    "cercit",
+    "phase-1",
+    "hard-rules",
+    "soft-rules",
+    "foir-limit"
+   ],
+   "summary": "Credit policy for cercit Phase 1 defines hard and soft rules for new car loans to salaried applicants.",
+   "preview": "Credit policy — cercit Phase 1 Status: draft for review Created: 16 Sep 2026 Policy version in code: 2026.08 Related: [[03 Policy Change Management]] · [[04 Model Risk Management]] · [[07 Policy Gap R...",
+   "degree": 1
+  },
+  {
+   "id": "69cb8f16",
+   "label": "Vahan Data API requirements rules and roadmap",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan-data-api",
+    "requirements",
+    "roadmap",
+    "api-setup"
+   ],
+   "summary": "Vahan Data API plan outlines requirements, rules, and roadmap for government and private use.",
+   "preview": "Scope: An end to end plan (requirements → design → build → deploy) plus a full financial plan for an aggregate Vahan vehicle registration Data API , from two angles: (A) the Government operating it (M...",
+   "degree": 4
+  },
+  {
+   "id": "791c8a03",
+   "label": "Minimum viable product",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "minimum-viable-product",
+    "product-management",
+    "prototype-vs-mvp",
+    "alpha-beta",
+    "mvp-types"
+   ],
+   "summary": "Minimum viable product is the smallest version that lets a real user complete a real job and yields learning unavailable otherwise.",
+   "preview": "MVP: Minimum Viable Product At a Glance Core question: As the first PM at a company with a 0 to 1 product, how do you test viability before spending a year and budget building it? Answer: a ladder — d...",
+   "degree": 0
+  },
+  {
+   "id": "7a0b0cae",
+   "label": "Cercit policy framework overview",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "cercit",
+    "policy-framework",
+    "policy-change-management",
+    "model-risk-management",
+    "credit-policy"
+   ],
+   "summary": "The cercit policy framework outlines four components, ownership, and change management to govern AI-assisted lending decisions.",
+   "preview": "cercit policy framework — overview Status: draft for review Owner: Sameer Mittimani Created: 16 Sep 2026 Scope: cercit Phase 1 — new car loans, salaried, single applicant, direct leads Related: [[01 R...",
+   "degree": 3
+  },
+  {
+   "id": "8ae782b6",
+   "label": "Lending and compliance glossary",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "lending",
+    "compliance",
+    "glossary",
+    "foir",
+    "aua",
+    "kua"
+   ],
+   "summary": "Lending and compliance glossary defines terms such as AUA/KUA, blind index, cooling-off period, and notes cercit's existing versus planned features.",
+   "preview": "Lending and compliance glossary Drafted by Hermes (free model) on 17 Sep 2026, then corrected by Claude the same night. The draft had these errors, fixed below: AUA/KUA, blind index, cooling off perio...",
+   "degree": 1
+  },
+  {
+   "id": "8bba8204",
+   "label": "Policy change management SOP for cercit credit appraisal",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "policy-change-management",
+    "cercit-credit-appraisal",
+    "standard-procedure",
+    "material-change",
+    "emergency-tightening",
+    "rollback-procedure"
+   ],
+   "summary": "The SOP outlines how policy changes for the cercit AI credit appraisal system are drafted, simulated, approved, activated, monitored, and rolled back.",
+   "preview": "DRAFT — SOP for policy change management Generated by Hermes (free model) on 17 Sep 2026 00:09. Not verified. Claude must check facts and numbers before this is used. Standard Operating Procedure: Pol...",
+   "degree": 1
+  },
+  {
+   "id": "8bd111f1",
+   "label": "Value stream mapping",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "value-stream-mapping",
+    "loan-disbursement",
+    "process-mapping",
+    "six-sigma",
+    "lean"
+   ],
+   "summary": "Value stream mapping separates touch time from queue time using observed timestamps, illustrated with a loan disbursement example.",
+   "preview": "Mapping a process end to end so that touch time and queue time are visible separately. It is the Measure phase tool that shows where lead time actually goes. Worked example: a loan disbursement stream...",
+   "degree": 0
+  },
+  {
+   "id": "8e344868",
+   "label": "Post-WWII silver coinage changes in India",
+   "group": "Areas",
+   "area": "coins",
+   "tags": [
+    "silver-phaseout",
+    "nickel-coins",
+    "tiger-rupee",
+    "demonetisation",
+    "republic-series"
+   ],
+   "summary": "After WWII, India replaced silver coins with nickel and cupro-nickel issues, culminating in the 1950 Republic series.",
+   "preview": "1. Economic and geopolitical reasons for phasing out silver (post WWII) Bullion value overtook face value. Wartime demand pushed silver's market price up until the metal in a silver rupee was worth mo...",
+   "degree": 0
+  },
+  {
+   "id": "b199ebed",
+   "label": "Cercit lending platform blueprint",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "cercit",
+    "lending-platform",
+    "supabase",
+    "aws",
+    "rules-engine"
+   ],
+   "summary": "The cercit lending platform blueprint outlines policies, admin parameters, impact analysis, and a phased build plan to turn cercit into an end-to-end lending system.",
+   "preview": "Policies, admin parameter register, impact analysis and build plan for turning cercit into an end to end lending platform. 17 Sep 2026 Turning cercit into a lending platform Foundation live All founda...",
+   "degree": 2
+  },
+  {
+   "id": "bb6f0a6b",
+   "label": "Parivahan analytics portal sitemap",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "parivahan",
+    "analytics-portal",
+    "sitemap",
+    "government"
+   ],
+   "summary": "Parivahan analytics portal sitemap shows the header menus, dropdown links, and footer utilities of the government site.",
+   "preview": "High level sitemap The same header appears across the portal. Dropdown parent items are just toggles (their link is ); the real destinations are their child items. [[Home Home]] — https://analytics.pa...",
+   "degree": 0
+  },
+  {
+   "id": "bc7421de",
+   "label": "Guide to the new Vahan public report portal",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "india",
+    "vehicle-registration",
+    "vahan-portal"
+   ],
+   "summary": "Guide to the new Vahan public report portal explains menus, filters, glossary, and quirks for accessing India's vehicle‑registration data.",
+   "preview": "A plain language community guide to India's new Vahan vehicle registration data portal — its menus, every report filter, a glossary of all values, and the known quirks to watch for. ⚠️ The old dashboa...",
+   "degree": 2
+  },
+  {
+   "id": "bf29e9a4",
+   "label": "What-and-how test for user-interview questions",
+   "group": "Resources",
+   "area": "masai",
+   "tags": [
+    "user-interview",
+    "what-and-how-test"
+   ],
+   "summary": "A good user-interview question asks what they did last time and how they decided, avoiding would-you or don't-you-think prompts.",
+   "preview": "Session 4 lesson: a good user interview question passes the what and how test. Ask what they did last time and how they decided. Never ask would you or don't you think questions.",
+   "degree": 0
+  },
+  {
+   "id": "c7b948ef",
+   "label": "AI-powered credit appraisal system for new vehicle finance",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "credit-appraisal",
+    "ai-powered",
+    "vehicle-finance",
+    "application-intake",
+    "policy-engine",
+    "officer-review"
+   ],
+   "summary": "It provides an AI-driven credit appraisal workflow for new vehicle loans, covering intake, policy checks, and officer review.",
+   "preview": "cercit live prototype Credit appraisal build, GitHub Pages https://cercit.github.io/CERCIT autoloan/ AI powered credit appraisal system for new vehicle finance. Application intake, policy engine, offi...",
+   "degree": 0
+  },
+  {
+   "id": "d0357b9b",
+   "label": "Vahan auto intelligence pipeline",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "vehicle-registration",
+    "data-scraping",
+    "pdf-report",
+    "linkedin-prompt",
+    "maruti-bug"
+   ],
+   "summary": "Vahan auto intelligence pipeline scrapes state registration data, cleans it, verifies against government totals, and outputs a PDF report and LinkedIn prompt.",
+   "preview": "One command scrapes India's Vahan vehicle registration dashboard, cleans the data, verifies it against the government's own totals, and produces a PDF report plus a ready to paste LinkedIn prompt. pyt...",
+   "degree": 0
+  },
+  {
+   "id": "d0b3f34e",
+   "label": "Choosing a green belt project",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "project-selection",
+    "green-belt",
+    "dmaic"
+   ],
+   "summary": "Choosing a Green Belt project involves scoring ideas against four tests to ensure a measurable Y, identifiable X's, a real gap, and accessible data.",
+   "preview": "A Green Belt programme is a deployment, not a course. It ends with a chartered project that runs for months, so the choice of project decides most of the outcome. What a project needs I score every id...",
+   "degree": 1
+  },
+  {
+   "id": "d7619a17",
+   "label": "Vahan Data API financial model",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "product-management",
+    "prd",
+    "project",
+    "api"
+   ],
+   "summary": "Vahan Data API financial model outlines cost-revenue projections for government and private perspectives.",
+   "preview": "Scope: An end to end plan (requirements → design → build → deploy) plus a full financial plan for an aggregate Vahan vehicle registration Data API , from two angles: (A) the Government operating it (M...",
+   "degree": 4
+  },
+  {
+   "id": "da440a6a",
+   "label": "Model risk management for cercit-risk-v1",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "model-risk-management",
+    "cercit-risk-v1",
+    "xgboost",
+    "onnx",
+    "synthetic-data",
+    "validation-gaps"
+   ],
+   "summary": "Model risk management for cercit-risk-v1 outlines scope, gaps, and required actions before deploying the XGBoost credit model.",
+   "preview": "Model risk management Status: draft for review Created: 16 Sep 2026 Applies to: cercit risk v1 (XGBoost, ONNX) and any successor Related: [[00 Policy Framework Overview]] · [[03 Policy Change Manageme...",
+   "degree": 0
+  },
+  {
+   "id": "db3df4a5",
+   "label": "Lessons learned building SamsMind in four days",
+   "group": "Projects",
+   "area": "samsmind",
+   "tags": [
+    "privacy-model",
+    "ai-filing",
+    "rag-citations",
+    "local-model",
+    "testing"
+   ],
+   "summary": "Lessons learned building SamsMind include deciding privacy model first, using closed AI categories, tuning link thresholds on real data, and separating approvals from data.",
+   "preview": "I built my second brain end to end in four days, following the Second Self course: capture, AI filing, linking, a map, and an ask box that answers from my notes. These are the lessons worth keeping, w...",
+   "degree": 0
+  },
+  {
+   "id": "dcd7c4ed",
+   "label": "Platform architecture for cercit lending platform",
+   "group": "Projects",
+   "area": "cercit",
+   "tags": [
+    "platform-architecture",
+    "cercit",
+    "lending-platform",
+    "decision-engine",
+    "backend-services"
+   ],
+   "summary": "Platform architecture describes moving business logic from the browser to backend services for cercit's lending platform.",
+   "preview": "Platform architecture — from cercit to an end to end lending platform Status: draft for decision Created: 17 Sep 2026 Related: [[09 Admin Console and IAM Policy]] · [[11 Impact Analysis]] · [[12 Futur...",
+   "degree": 1
+  },
+  {
+   "id": "ddbccfa0",
+   "label": "VAHAN glossary of key terms",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "vehicle-registration",
+    "documentation"
+   ],
+   "summary": "VAHAN glossary provides plain‑language definitions of key terms used in the vehicle‑registration portal, sourced from official MoRTH and NIC documents.",
+   "preview": "What each value means, in plain language. Meanings are drawn from the portal and from official MoRTH / NIC / Motor Vehicles Act sources. Where nothing official defines a term, that is stated rather th...",
+   "degree": 3
+  },
+  {
+   "id": "e2adf3db",
+   "label": "Statistics core concepts",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "statistics",
+    "hypothesis-testing",
+    "excel",
+    "central-limit-theorem",
+    "chi-square"
+   ],
+   "summary": "Statistics core concepts cover six key ideas, hypothesis testing, Excel tools, and test selection for continuous and discrete data.",
+   "preview": "The whole statistical half of the programme reduces to about six ideas. It looks like more because it arrives fast and in unfamiliar words. The six Y = f(X) — the outcome you care about is a function ...",
+   "degree": 0
+  },
+  {
+   "id": "e6052da2",
+   "label": "Coin collection arrangement methodology",
+   "group": "Areas",
+   "area": "coins",
+   "tags": [
+    "coins",
+    "numismatics",
+    "methodology",
+    "collection"
+   ],
+   "summary": "Coin collection arrangement methodology describes sourcing, sorting, and storing coins by continent, sub‑region, country, issuer, and denomination in dedicated boxes.",
+   "preview": "Coin Collection Arrangement — Methodology 1. Source & scope Source: Numista collection export (CSV/XLSX), re pulled fresh each time. India isn't in this collection yet — out of scope for these boxes. ...",
+   "degree": 0
+  },
+  {
+   "id": "e9e4527f",
+   "label": "DMAIC roadmap 15 steps",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "dmaic",
+    "six-sigma",
+    "measurement-system",
+    "control-phase"
+   ],
+   "summary": "DMAIC roadmap 15 steps outlines the define, measure, analyse, improve, control phases with key actions and common pitfalls.",
+   "preview": "The spine of the whole method. Every tool taught hangs off one of these steps — when a tool is introduced and you cannot place it, ask which step it serves. D — Define 1. Generate project ideas 2. Sel...",
+   "degree": 1
+  },
+  {
+   "id": "ea981b0c",
+   "label": "Vahan portal knowledge",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "vehicle-registration",
+    "public-data"
+   ],
+   "summary": "Vahan portal knowledge covers how to pull, clean, and verify public vehicle-registration data from India's Vahan dashboard.",
+   "preview": "My notes on India's Vahan vehicle registration dashboard, run by MoRTH and NIC under the Parivahan umbrella. Everything here is about public data and the site itself: how it is laid out, how I downloa...",
+   "degree": 2
+  },
+  {
+   "id": "f1ebc8e6",
+   "label": "The eight wastes",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "six-sigma",
+    "lean",
+    "waste",
+    "muda",
+    "lending"
+   ],
+   "summary": "The eight wastes of Lean are overproduction, inventory, defects, over‑processing, waiting, motion, transportation, and underused talent.",
+   "preview": "The core Lean diagnostic. Memorise these — they come up in the orientation and again in project brainstorming, and you walk candidate problems against the list one by one. Waste In a lending process 1...",
+   "degree": 0
+  },
+  {
+   "id": "f6538f0f",
+   "label": "Report filters reference",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "report-filters"
+   ],
+   "summary": "Report filters reference lists every control on the Vahan Public Report page's Report Filters panel with their exact options as shown on the portal.",
+   "preview": "Every control on the Report Filters panel of the [Vahan Public Report](https://analytics.parivahan.gov.in/analytics/vahanpublicreport?lang=en) page, with its options reproduced verbatim (spelling, cap...",
+   "degree": 0
+  },
+  {
+   "id": "fdb34039",
+   "label": "Illustrative scenario of a paid Vahan Data API",
+   "group": "Resources",
+   "area": "vahan-rules",
+   "tags": [
+    "vahan",
+    "vehicle-registration",
+    "api",
+    "data-api",
+    "revenue-scenario"
+   ],
+   "summary": "Illustrative scenario shows how a paid aggregate Vahan Data API could generate ₹12–144 crore yearly revenue.",
+   "preview": "This is an independent, illustrative analysis — NOT an official MoRTH/NIC plan, proposal, or endorsement. The historical figures below are real and cited. The forward estimates are scenarios built on ...",
+   "degree": 4
+  },
+  {
+   "id": "ff6d1e88",
+   "label": "Six sigma for product management roles",
+   "group": "Projects",
+   "area": "sixsigma",
+   "tags": [
+    "six-sigma",
+    "product-management",
+    "project-management",
+    "dmaic",
+    "hypothesis-testing"
+   ],
+   "summary": "Six sigma for PM Roles explains how the method applies to product and project management work.",
+   "preview": "Two different questions, two different answers. The framing that resolves both: Six Sigma is a problem solving method that happens to run as a project — not a project management method, and not a prod...",
+   "degree": 0
+  }
+ ],
+ "edges": [
+  {
+   "source": "015ce04b",
+   "target": "530c66aa",
+   "weight": 0.68
+  },
+  {
+   "source": "11464886",
+   "target": "d7619a17",
+   "weight": 0.7
+  },
+  {
+   "source": "11464886",
+   "target": "fdb34039",
+   "weight": 0.69
+  },
+  {
+   "source": "2d7fba07",
+   "target": "69cb8f16",
+   "weight": 0.86
+  },
+  {
+   "source": "2d7fba07",
+   "target": "d7619a17",
+   "weight": 0.84
+  },
+  {
+   "source": "2d7fba07",
+   "target": "ddbccfa0",
+   "weight": 0.67
+  },
+  {
+   "source": "2d7fba07",
+   "target": "ea981b0c",
+   "weight": 0.72
+  },
+  {
+   "source": "2d7fba07",
+   "target": "fdb34039",
+   "weight": 0.8
+  },
+  {
+   "source": "3be1d1ec",
+   "target": "42d241f1",
+   "weight": 0.76
+  },
+  {
+   "source": "3be1d1ec",
+   "target": "bc7421de",
+   "weight": 0.73
+  },
+  {
+   "source": "42d241f1",
+   "target": "bc7421de",
+   "weight": 0.83
+  },
+  {
+   "source": "5a712926",
+   "target": "8ae782b6",
+   "weight": 0.68
+  },
+  {
+   "source": "681d8fe8",
+   "target": "7a0b0cae",
+   "weight": 0.76
+  },
+  {
+   "source": "69cb8f16",
+   "target": "d7619a17",
+   "weight": 0.89
+  },
+  {
+   "source": "69cb8f16",
+   "target": "ddbccfa0",
+   "weight": 0.65
+  },
+  {
+   "source": "69cb8f16",
+   "target": "fdb34039",
+   "weight": 0.7
+  },
+  {
+   "source": "7a0b0cae",
+   "target": "8bba8204",
+   "weight": 0.72
+  },
+  {
+   "source": "7a0b0cae",
+   "target": "b199ebed",
+   "weight": 0.66
+  },
+  {
+   "source": "b199ebed",
+   "target": "dcd7c4ed",
+   "weight": 0.67
+  },
+  {
+   "source": "d0b3f34e",
+   "target": "e9e4527f",
+   "weight": 0.67
+  },
+  {
+   "source": "d7619a17",
+   "target": "fdb34039",
+   "weight": 0.76
+  },
+  {
+   "source": "ddbccfa0",
+   "target": "ea981b0c",
+   "weight": 0.65
+  }
+ ],
+ "metadata": {
+  "node_count": 47,
+  "edge_count": 22
+ }
+}
